@@ -26,7 +26,7 @@ class Auth:
                 return response_object, 401
 
         except Exception as e:
-            print(e)
+            print('e')
             response_object = {
                 'status': 'fail',
                 'message': 'Try again'
@@ -53,7 +53,7 @@ class Auth:
         else:
             response_object = {
                 'status': 'fail',
-                'message': 'Provide a valid auth token.'
+                'message': 'Provide a valid auth token11.'
             }
             return response_object, 403
 
@@ -83,6 +83,6 @@ class Auth:
         else:
             response_object = {
                 'status': 'fail',
-                'message': 'Provide a valid auth token.'
+                'message': 'Provide a valid auth token22.'
             }
             return response_object, 401

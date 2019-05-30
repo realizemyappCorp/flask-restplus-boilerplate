@@ -12,7 +12,7 @@ _user = UserDto.user
 @api.route('/')
 class UserList(Resource):
     @api.doc('list_of_registered_users')
-    @admin_token_required
+    @admin_token_required #decorator that require token to answer
     @api.marshal_list_with(_user, envelope='data')
     def get(self):
         """List all registered users"""
