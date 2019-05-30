@@ -6,7 +6,10 @@ from .main.controller.auth_controller import api as auth_ns
 from .main.controller.servstat import api as servefile
 
 
+
+
 blueprint = Blueprint('api', __name__)
+
 
 api = Api(blueprint,
           title='FLASK RESTPLUS API BOILER-PLATE WITH JWT',

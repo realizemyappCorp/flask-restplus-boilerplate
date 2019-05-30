@@ -1,7 +1,9 @@
 from flask import request,jsonify
 from flask_restplus import Resource
 
-from ..util.dto import ServeFile 
+
+
+from ..util.dto import ServeFile
 
 api = ServeFile.api
 jsonbizarre=[

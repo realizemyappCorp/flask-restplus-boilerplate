@@ -1,6 +1,5 @@
 from flask_restplus import Namespace, fields
 
-
 class UserDto:
     api = Namespace('user', description='user related operations')
     user = api.model('user', {
@@ -18,5 +17,4 @@ class AuthDto:
         'password': fields.String(required=True, description='The user password ')
     })
 class ServeFile :
-    api=Namespace('Files',description='loafing files and links')
-    
+    api=Namespace('Files',description='loading files and links')
